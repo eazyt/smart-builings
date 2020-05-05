@@ -36,25 +36,26 @@
         >Buildings
       </h1>
       <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#Services">services</a></li>
-        <li><a href="#about">about</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">about</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
+    <!-- Header: showcase -->
     <header id="showcase">
       <div class="showcase-content">
         <h1 class="l-heading">
           If It Exist We Can Measure It
         </h1>
-        <p>
+        <p class="lead">
           Bringing data home. whatever you need to be updated about, its all
           possible in the palm of you hands.
         </p>
-        <a href="services" class="btn">Read More</a>
+        <a href="#services" class="btn">Read More</a>
       </div>
     </header>
-    <!-- Services: What we do -->
+    <!-- Section: What we do -->
     <section id="services" class="bg-light py-1">
       <div class="container">
         <h2 class="m-heading text-center">
@@ -99,9 +100,80 @@
             </div>
           </div>
         </div>
-
+        <!-- Section: Who We Are -->
+        <section id="who">
+          <div class="who-img"></div>
+          <div class="who-text bg-dark p-2">
+            <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum modi quam temporibus obcaecati nisi cumque optio aliquid accusamus, sit praesentium rem non quo similique officia delectus necessitatibus laudantium aperiam?</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+              <li>Thabo Rams: President</li>
+              <li>Eazyt: CEO</li>
+              <li>London: Chief Engineer</li>
+              <li>Le: Chief of Staff</li>
+            </ul>
+          </div>
+        </section>
         
       </div>
     </section>
+    <!-- Section: Clients -->
+    <section id="clients" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Our</span> Clients
+        </h2>
+        <div class="items py-1">
+          <div><img src="logos/logo1.png" alt="Client1"></div>
+          <div><img src="logos/logo2.png" alt="Client2"></div>
+          <div><img src="logos/logo3.png" alt="Client3"></div>
+          <div><img src="logos/logo4.png" alt="Client4"></div>
+          <div><img src="logos/logo5.png" alt="Client4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form to contact us</p>
+        <form action="process.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" email="email" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" phone="phone" id="phone" placeholder="Enter phone">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea type="text" message="message" id="message" placeholder="Enter message"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-dark">
+        </form>
+      </div>
+      <div class="map"></div>
+    </section>
+    <!-- Section: Footer -->
+    <footer class="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright &copy; 2020, Smart Buildings, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Local JS File -->
+    <script src="js/main.js"></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2eqM16TgkKN2vQzM_kJH64bNx57ikOYY&callback=initMap"
+    async defer></script>
   </body>
 </html>
