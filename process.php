@@ -9,5 +9,5 @@ if(isset($_POST['email'])){
 
     // send email
     mail:($admin_email, "New Form Submission", $message . ' - ' . $phone, "From:" . $email);
-    header('Location: http:My_Web_Addres');
+    header('Location: https://sleepy-jones-1c8212.netlify.app');
 }
